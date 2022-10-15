@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D64A8A528FB5ED50092063E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64A8A428FB5ED50092063E /* HomeViewController.swift */; };
+		2D64A8A728FB5F270092063E /* TableroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64A8A628FB5F260092063E /* TableroViewController.swift */; };
 		2DD9BC2328F3A0F600538598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9BC2228F3A0F600538598 /* AppDelegate.swift */; };
 		2DD9BC2528F3A0F600538598 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9BC2428F3A0F600538598 /* SceneDelegate.swift */; };
 		2DD9BC2728F3A0F600538598 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9BC2628F3A0F600538598 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D64A8A428FB5ED50092063E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2D64A8A628FB5F260092063E /* TableroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableroViewController.swift; sourceTree = "<group>"; };
 		2DD9BC1F28F3A0F600538598 /* theApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = theApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DD9BC2228F3A0F600538598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DD9BC2428F3A0F600538598 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,9 +64,11 @@
 				2DD9BC2428F3A0F600538598 /* SceneDelegate.swift */,
 				2DD9BC2628F3A0F600538598 /* ViewController.swift */,
 				2DD9BC2828F3A0F600538598 /* Main.storyboard */,
+				2D64A8A628FB5F260092063E /* TableroViewController.swift */,
 				2DD9BC2B28F3A0F700538598 /* Assets.xcassets */,
 				2DD9BC2D28F3A0F700538598 /* LaunchScreen.storyboard */,
 				2DD9BC3028F3A0F700538598 /* Info.plist */,
+				2D64A8A428FB5ED50092063E /* HomeViewController.swift */,
 			);
 			path = theApp;
 			sourceTree = "<group>";
@@ -139,8 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DD9BC2728F3A0F600538598 /* ViewController.swift in Sources */,
+				2D64A8A728FB5F270092063E /* TableroViewController.swift in Sources */,
 				2DD9BC2328F3A0F600538598 /* AppDelegate.swift in Sources */,
 				2DD9BC2528F3A0F600538598 /* SceneDelegate.swift in Sources */,
+				2D64A8A528FB5ED50092063E /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
