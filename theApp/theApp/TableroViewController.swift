@@ -9,12 +9,16 @@ import UIKit
 
 class TableroViewController: UIViewController {
 
-    @IBOutlet weak var butt: UIButton!
+    @IBOutlet weak var jugadas: UIStackView!
+    @IBOutlet weak var pistas: UIStackView!
+    @IBOutlet weak var colores: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        butt.contentHorizontalAlignment = .fill
-        butt.contentVerticalAlignment = .fill
+        jugadas.layer.cornerRadius = 10
+        pistas.layer.cornerRadius = 10
+        colores.layer.cornerRadius = 10
+
         // Do any additional setup after loading the view.
     }
     
