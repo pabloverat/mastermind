@@ -12,6 +12,7 @@ class TableroViewController: UIViewController {
     @IBOutlet weak var jugadas: UIStackView!
     @IBOutlet weak var pistas: UIStackView!
     @IBOutlet weak var colores: UIStackView!
+    @IBOutlet weak var LbTiempo: UILabel!
     
     var marble : [Int:String] = [1:"green", 2:"aqua", 3:"orange", 4:"red", 5:"purple", 6:"yellow"]
     
@@ -31,6 +32,10 @@ class TableroViewController: UIViewController {
 
         let evaluation = evaluateGuess(guess: guess, code: code)
         print(evaluation)
+        
+        //TIEMPO
+        LbTiempo.text = "Tiempo "+String(counter)
+        startTimer()
 
         
     }
@@ -58,15 +63,50 @@ class TableroViewController: UIViewController {
         return evaluation.sorted(by: >)
     }
     
+    //MARK: - PAUSA Y CRONOMETRO
+    var counter = 0.0
+    var timer = Timer()
+    
+    @IBOutlet weak var BtnPausa: UIButton!
+    
+    func startTimer() {
+            timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(UpdateTimer), userInfo: nil, repeats: true)
+        }
+    
+    @objc func UpdateTimer() {
+        counter = counter + 0.1
+        LbTiempo.text = "Tiempo "+String(format: "%.1f", counter)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+    @IBAction func Pausa(_ sender: UIButton) {
+        timer.invalidate()
 
-    /*
+   
+        
+        let alertaP = UIAlertController (title: "PAUSA", message: "PAUSA", preferredStyle: .alert)
+        let accionRegresar = UIAlertAction (title: "Regresar", style: .cancel){
+            act in
+            self.startTimer()
+        }
+ 
+        alertaP.addAction(accionRegresar)
+        present(alertaP, animated: true)
+        
+    }
+    
+  //  @IBAction func Pausar(_ sender: UIButton) {}
+    
+    
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+ 
+    
 
 }
