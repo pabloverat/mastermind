@@ -17,6 +17,8 @@ class TableroViewController: UIViewController {
     @IBOutlet weak var colores: UIStackView!
     @IBOutlet weak var LbTiempo: UILabel!
     
+    // ***** START: tablero *****
+    
     // row 1
     @IBOutlet weak var br1c1: UIButton!
     @IBOutlet weak var br1c2: UIButton!
@@ -65,6 +67,63 @@ class TableroViewController: UIViewController {
     @IBOutlet weak var br8c3: UIButton!
     @IBOutlet weak var br8c4: UIButton!
     
+    // ***** END: tablero *****
+
+    // ***** START: pistas *****
+
+    // row 1
+    @IBOutlet weak var pr1c1: UIButton!
+    @IBOutlet weak var pr1c2: UIButton!
+    @IBOutlet weak var pr1c3: UIButton!
+    @IBOutlet weak var pr1c4: UIButton!
+    
+    // row 2
+    @IBOutlet weak var pr2c1: UIButton!
+    @IBOutlet weak var pr2c2: UIButton!
+    @IBOutlet weak var pr2c3: UIButton!
+    @IBOutlet weak var pr2c4: UIButton!
+    
+    // row 3
+    @IBOutlet weak var pr3c1: UIButton!
+    @IBOutlet weak var pr3c2: UIButton!
+    @IBOutlet weak var pr3c3: UIButton!
+    @IBOutlet weak var pr3c4: UIButton!
+
+    // row 4
+    @IBOutlet weak var pr4c1: UIButton!
+    @IBOutlet weak var pr4c2: UIButton!
+    @IBOutlet weak var pr4c3: UIButton!
+    @IBOutlet weak var pr4c4: UIButton!
+
+    // row 5
+    @IBOutlet weak var pr5c1: UIButton!
+    @IBOutlet weak var pr5c2: UIButton!
+    @IBOutlet weak var pr5c3: UIButton!
+    @IBOutlet weak var pr5c4: UIButton!
+    
+    // row 6
+    @IBOutlet weak var pr6c1: UIButton!
+    @IBOutlet weak var pr6c2: UIButton!
+    @IBOutlet weak var pr6c3: UIButton!
+    @IBOutlet weak var pr6c4: UIButton!
+    
+    // row 7
+    @IBOutlet weak var pr7c1: UIButton!
+    @IBOutlet weak var pr7c2: UIButton!
+    @IBOutlet weak var pr7c3: UIButton!
+    @IBOutlet weak var pr7c4: UIButton!
+    
+    // row 8
+    @IBOutlet weak var pr8c1: UIButton!
+    @IBOutlet weak var pr8c2: UIButton!
+    @IBOutlet weak var pr8c3: UIButton!
+    @IBOutlet weak var pr8c4: UIButton!
+    
+    
+    // ***** END: pistas *****
+
+    
+    
     // colores
     
     @IBOutlet weak var greenMarble: UIButton!
@@ -80,6 +139,9 @@ class TableroViewController: UIViewController {
     var guessEval : [Int:String] = [-1:"badGuess", 0:"mediumGuess", 1:"goodGuess"]
     
     var tablero = [[UIButton]]()
+    
+    var tablaPistas = [[UIButton]]()
+    
     var guessingRow = Array(repeating: 0, count: 4)
     
     var code : [Int]?
@@ -88,7 +150,7 @@ class TableroViewController: UIViewController {
     
     var activeColor : Int?
     
-    // MARK: - Generate code
+    // MARK: - Generate secret code
     
     func generateCode() -> [Int] {
         var code = [Int]()
@@ -131,14 +193,17 @@ class TableroViewController: UIViewController {
         
         let eval = evaluateGuess(guess: guessingRow, code: code!)
         
-        print(code)
+        print(code as Any)
         print(guessingRow)
         print(eval)
+        
+        updatePistas(eval: eval)
         
         activeRow! += 1
         updateActiveRow()
         
     }
+
     
     func updateActiveRow() {
         
@@ -153,7 +218,26 @@ class TableroViewController: UIViewController {
         }
     }
     
+    // MARK: - Printing clues
 
+    func getIndicatorImage(forCode : Int) -> UIImage? {
+        if forCode == 0 {
+            return UIImage(named: "whiteIndicator")
+        }
+        if forCode == 1 {
+            return UIImage(named: "blackIndicator")
+        }
+        return UIImage(named: "grayIndicator")
+    }
+    
+    func updatePistas(eval : [Int]){
+        for idx in 0...3 {
+            print(idx)
+            let img = getIndicatorImage(forCode: eval[idx])
+            tablaPistas[activeRow! - 1][idx].setBackgroundImage(img, for: .normal)
+        }
+        
+    }
     
     // MARK: - Selecting active color
     
@@ -271,7 +355,6 @@ class TableroViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         code = generateCode()
-        print(code)
 
         //TIEMPO
         LbTiempo.text = "Tiempo "+String(counter)
@@ -286,6 +369,16 @@ class TableroViewController: UIViewController {
                    [br7c1, br7c2, br7c3, br7c4],
                    [br8c1, br8c2, br8c3, br8c4]
                   ]
+        
+        tablaPistas = [[pr1c1, pr1c2, pr1c3, pr1c4],
+                       [pr2c1, pr2c2, pr2c3, pr2c4],
+                       [pr3c1, pr3c2, pr3c3, pr3c4],
+                       [pr4c1, pr4c2, pr4c3, pr4c4],
+                       [pr5c1, pr5c2, pr5c3, pr5c4],
+                       [pr6c1, pr6c2, pr6c3, pr6c4],
+                       [pr7c1, pr7c2, pr7c3, pr7c4],
+                       [pr8c1, pr8c2, pr8c3, pr8c4]
+                      ]
         
         activeRow = 1
         updateActiveRow()

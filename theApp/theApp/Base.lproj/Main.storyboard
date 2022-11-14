@@ -547,7 +547,7 @@
                                                 <color key="backgroundColor" name="SecBckgColor"/>
                                                 <directionalEdgeInsets key="directionalLayoutMargins" top="20" leading="20" bottom="20" trailing="20"/>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" axis="vertical" distribution="fillEqually" spacing="15" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K8E-XU-SvU">
+                                            <stackView opaque="NO" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="K8E-XU-SvU">
                                                 <rect key="frame" x="245" y="0.0" width="80" height="465"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="0AL-SB-b4f" userLabel="Pistas8">
@@ -561,20 +561,16 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="4nb-8r-qTT" secondAttribute="height" multiplier="1:1" id="vll-Zm-enf"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypu-O0-okY">
                                                                         <rect key="frame" x="22.5" y="0.0" width="17.5" height="17.5"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="ypu-O0-okY" secondAttribute="height" multiplier="1:1" id="XWK-Xn-e9E"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -586,20 +582,16 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="Iem-Bp-ZfG" secondAttribute="height" multiplier="1:1" id="3B5-HJ-CKH"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjM-mE-7xY">
                                                                         <rect key="frame" x="22.5" y="0.0" width="17.5" height="17.5"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="mjM-mE-7xY" secondAttribute="height" multiplier="1:1" id="mkf-Xe-xrn"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -619,20 +611,16 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="U7k-mO-URp" secondAttribute="height" multiplier="1:1" id="mVU-hq-hCa"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WF3-5M-dZF">
                                                                         <rect key="frame" x="22.5" y="0.0" width="17.5" height="17.5"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="WF3-5M-dZF" secondAttribute="height" multiplier="1:1" id="U5O-kj-ros"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -644,20 +632,16 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="UKG-Tt-167" secondAttribute="height" multiplier="1:1" id="1vw-R2-sVA"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNU-XQ-7mr">
                                                                         <rect key="frame" x="22.5" y="0.0" width="17.5" height="17.5"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="sNU-XQ-7mr" secondAttribute="height" multiplier="1:1" id="sqf-D1-Bpm"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -677,20 +661,16 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="yk0-q3-oNO" secondAttribute="height" multiplier="1:1" id="nXC-n2-siN"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3C9-eT-9Oc">
                                                                         <rect key="frame" x="22.5" y="0.0" width="17.5" height="17.5"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="3C9-eT-9Oc" secondAttribute="height" multiplier="1:1" id="9X9-bY-nyx"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -702,20 +682,16 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="OXX-FW-2rc" secondAttribute="height" multiplier="1:1" id="AXP-wH-eo2"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSx-64-Hoz">
                                                                         <rect key="frame" x="22.5" y="0.0" width="17.5" height="17.5"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="RSx-64-Hoz" secondAttribute="height" multiplier="1:1" id="xfV-4v-tBY"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -735,20 +711,16 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="T9k-30-2wx" secondAttribute="height" multiplier="1:1" id="iXn-di-KNH"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edo-hT-uJb">
                                                                         <rect key="frame" x="22.5" y="0.0" width="17.5" height="17.5"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="edo-hT-uJb" secondAttribute="height" multiplier="1:1" id="Zje-yV-fzI"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -760,20 +732,16 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="OsV-e4-aVk" secondAttribute="height" multiplier="1:1" id="G2g-Ce-ESd"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3N-Bb-As3">
                                                                         <rect key="frame" x="22.5" y="0.0" width="17.5" height="17.5"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="b3N-Bb-As3" secondAttribute="height" multiplier="1:1" id="O6u-tJ-Siw"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -790,20 +758,16 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="DbR-FO-RDm" secondAttribute="height" multiplier="1:1" id="3OS-kZ-EB1"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUI-vF-Juk">
                                                                         <rect key="frame" x="22.5" y="0.0" width="17.5" height="17.5"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="OUI-vF-Juk" secondAttribute="height" multiplier="1:1" id="I42-ZJ-RaQ"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -815,20 +779,16 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="154-ZL-dP7" secondAttribute="height" multiplier="1:1" id="GqT-Aq-GvJ"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkb-gy-91Q">
                                                                         <rect key="frame" x="22.5" y="0.0" width="17.5" height="17.5"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="hkb-gy-91Q" secondAttribute="height" multiplier="1:1" id="RAg-Wg-aVW"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -848,20 +808,16 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="zvo-SZ-zUJ" secondAttribute="height" multiplier="1:1" id="dUT-5r-S3O"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wX4-cU-L3r">
                                                                         <rect key="frame" x="22.5" y="0.0" width="17.5" height="17.5"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="wX4-cU-L3r" secondAttribute="height" multiplier="1:1" id="T4q-Ez-azD"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -873,20 +829,16 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="ssz-hy-CsV" secondAttribute="height" multiplier="1:1" id="bJU-Bv-h75"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98y-zy-VDy">
                                                                         <rect key="frame" x="22.5" y="0.0" width="17.5" height="17.5"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="98y-zy-VDy" secondAttribute="height" multiplier="1:1" id="5h0-bf-lcf"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -906,20 +858,16 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="UbP-qJ-wpt" secondAttribute="height" multiplier="1:1" id="4xV-gb-Hzv"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCo-0g-wL7">
                                                                         <rect key="frame" x="22.5" y="0.0" width="17.5" height="17.5"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="DCo-0g-wL7" secondAttribute="height" multiplier="1:1" id="VA4-Uw-aOx"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -931,20 +879,16 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="qrg-Ve-4tt" secondAttribute="height" multiplier="1:1" id="pxG-Ta-Kv8"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTj-x2-zow">
                                                                         <rect key="frame" x="22.5" y="0.0" width="17.5" height="17.5"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="eTj-x2-zow" secondAttribute="height" multiplier="1:1" id="iec-Cb-Yat"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -964,20 +908,16 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="QIU-zO-FWa" secondAttribute="height" multiplier="1:1" id="PKx-wJ-KxX"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJY-nT-XB1">
                                                                         <rect key="frame" x="22.5" y="0.0" width="17.5" height="17.5"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="yJY-nT-XB1" secondAttribute="height" multiplier="1:1" id="r7E-Kb-pDE"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -989,20 +929,16 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="RKj-Ya-DXm" secondAttribute="height" multiplier="1:1" id="ufg-eU-sLn"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KI6-PK-MbF">
                                                                         <rect key="frame" x="22.5" y="0.0" width="17.5" height="17.5"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" secondItem="KI6-PK-MbF" secondAttribute="height" multiplier="1:1" id="51d-Iz-iwP"/>
                                                                         </constraints>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
-                                                                        </buttonConfiguration>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <state key="normal" backgroundImage="grayIndicator"/>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -1182,6 +1118,38 @@
                         <outlet property="jugadas" destination="stb-JK-GZz" id="Ahk-g6-J0A"/>
                         <outlet property="orangeMarble" destination="2Vd-1w-Ibj" id="Dpa-mP-hnh"/>
                         <outlet property="pistas" destination="K8E-XU-SvU" id="svy-A9-ETD"/>
+                        <outlet property="pr1c1" destination="QIU-zO-FWa" id="b7T-3p-Fbw"/>
+                        <outlet property="pr1c2" destination="yJY-nT-XB1" id="PQm-cj-2X0"/>
+                        <outlet property="pr1c3" destination="RKj-Ya-DXm" id="xQe-aS-1TT"/>
+                        <outlet property="pr1c4" destination="KI6-PK-MbF" id="jh9-xm-zYY"/>
+                        <outlet property="pr2c1" destination="UbP-qJ-wpt" id="kky-0W-Nlq"/>
+                        <outlet property="pr2c2" destination="DCo-0g-wL7" id="qdW-3l-JKo"/>
+                        <outlet property="pr2c3" destination="qrg-Ve-4tt" id="nFx-WH-f2H"/>
+                        <outlet property="pr2c4" destination="eTj-x2-zow" id="9rA-ga-nuA"/>
+                        <outlet property="pr3c1" destination="zvo-SZ-zUJ" id="N2A-rB-08I"/>
+                        <outlet property="pr3c2" destination="wX4-cU-L3r" id="obH-qM-eKH"/>
+                        <outlet property="pr3c3" destination="ssz-hy-CsV" id="pyE-Ra-8qg"/>
+                        <outlet property="pr3c4" destination="98y-zy-VDy" id="DUw-4i-ktI"/>
+                        <outlet property="pr4c1" destination="DbR-FO-RDm" id="xwp-WQ-KW4"/>
+                        <outlet property="pr4c2" destination="OUI-vF-Juk" id="UsC-0G-T1w"/>
+                        <outlet property="pr4c3" destination="154-ZL-dP7" id="Liq-74-6e2"/>
+                        <outlet property="pr4c4" destination="hkb-gy-91Q" id="elv-Bz-Gnb"/>
+                        <outlet property="pr5c1" destination="T9k-30-2wx" id="cc2-6u-nLn"/>
+                        <outlet property="pr5c2" destination="edo-hT-uJb" id="dyb-Kz-mEv"/>
+                        <outlet property="pr5c3" destination="OsV-e4-aVk" id="vPr-Ac-1U5"/>
+                        <outlet property="pr5c4" destination="b3N-Bb-As3" id="OtW-n1-YDb"/>
+                        <outlet property="pr6c1" destination="yk0-q3-oNO" id="xRe-PD-dBE"/>
+                        <outlet property="pr6c2" destination="3C9-eT-9Oc" id="Q6j-sM-akH"/>
+                        <outlet property="pr6c3" destination="OXX-FW-2rc" id="0LU-JU-24C"/>
+                        <outlet property="pr6c4" destination="RSx-64-Hoz" id="bw3-vO-eqZ"/>
+                        <outlet property="pr7c1" destination="U7k-mO-URp" id="Wp3-Ds-c7n"/>
+                        <outlet property="pr7c2" destination="WF3-5M-dZF" id="8c8-3t-NS9"/>
+                        <outlet property="pr7c3" destination="UKG-Tt-167" id="1Ye-3e-QtD"/>
+                        <outlet property="pr7c4" destination="sNU-XQ-7mr" id="k3y-CD-lqz"/>
+                        <outlet property="pr8c1" destination="4nb-8r-qTT" id="KXi-uV-mfM"/>
+                        <outlet property="pr8c2" destination="ypu-O0-okY" id="7em-7W-8j8"/>
+                        <outlet property="pr8c3" destination="Iem-Bp-ZfG" id="73H-zR-cJt"/>
+                        <outlet property="pr8c4" destination="mjM-mE-7xY" id="DRZ-U3-RdW"/>
                         <outlet property="purpleMarble" destination="Ofv-qo-Djo" id="UeO-4z-kR9"/>
                         <outlet property="redMarble" destination="QhD-p8-wT1" id="UAX-Jv-Es2"/>
                         <outlet property="yellowMarble" destination="Kig-AQ-rCt" id="f2q-cZ-gPw"/>
