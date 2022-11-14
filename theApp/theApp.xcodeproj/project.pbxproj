@@ -15,6 +15,7 @@
 		2DD9BC2A28F3A0F600538598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DD9BC2828F3A0F600538598 /* Main.storyboard */; };
 		2DD9BC2C28F3A0F700538598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DD9BC2B28F3A0F700538598 /* Assets.xcassets */; };
 		2DD9BC2F28F3A0F700538598 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DD9BC2D28F3A0F700538598 /* LaunchScreen.storyboard */; };
+		CF8438242912F695004926C2 /* ViewControllerPausa.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8438232912F695004926C2 /* ViewControllerPausa.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		2DD9BC2B28F3A0F700538598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DD9BC2E28F3A0F700538598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DD9BC3028F3A0F700538598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF8438232912F695004926C2 /* ViewControllerPausa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPausa.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				2DD9BC2428F3A0F600538598 /* SceneDelegate.swift */,
 				2DD9BC2628F3A0F600538598 /* ViewController.swift */,
 				2DD9BC2828F3A0F600538598 /* Main.storyboard */,
+				CF8438232912F695004926C2 /* ViewControllerPausa.swift */,
 				2D64A8A628FB5F260092063E /* TableroViewController.swift */,
 				2DD9BC2B28F3A0F700538598 /* Assets.xcassets */,
 				2DD9BC2D28F3A0F700538598 /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 				2DD9BC2728F3A0F600538598 /* ViewController.swift in Sources */,
 				2D64A8A728FB5F270092063E /* TableroViewController.swift in Sources */,
 				2DD9BC2328F3A0F600538598 /* AppDelegate.swift in Sources */,
+				CF8438242912F695004926C2 /* ViewControllerPausa.swift in Sources */,
 				2DD9BC2528F3A0F600538598 /* SceneDelegate.swift in Sources */,
 				2D64A8A528FB5ED50092063E /* HomeViewController.swift in Sources */,
 			);

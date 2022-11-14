@@ -28,7 +28,7 @@
         <!--HomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="HomeVC" id="BYZ-38-t0r" customClass="HomeViewController" customModule="theApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" title="HomeVC" id="BYZ-38-t0r" customClass="HomeViewController" customModule="theApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,12 +128,18 @@
                                                 <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="play.rectangle.fill" catalog="system" title=""/>
+                                                <connections>
+                                                    <action selector="checkBttn:" destination="RWf-al-GQd" eventType="touchUpInside" id="v3F-TT-6yh"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O86-at-YnK">
                                                 <rect key="frame" x="252.5" y="0.0" width="72.5" height="33.5"/>
                                                 <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" image="pause.rectangle.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="Pausa:" destination="RWf-al-GQd" eventType="touchUpInside" id="pP4-g4-8tD"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
@@ -141,7 +147,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="WId-6e-m9o" userLabel="JugadasPistas">
                                         <rect key="frame" x="15" y="77" width="325" height="465"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" axis="vertical" distribution="fillEqually" spacing="15" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="stb-JK-GZz">
+                                            <stackView opaque="NO" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="stb-JK-GZz">
                                                 <rect key="frame" x="0.0" y="0.0" width="230" height="465"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mgC-a8-JqZ" userLabel="Jugada8">
@@ -152,40 +158,44 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="pLB-US-2zp" secondAttribute="height" multiplier="1:1" id="Kdb-FP-npj"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="grayMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="nB9-1f-eyj"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEf-kd-ZOv">
                                                                 <rect key="frame" x="50" y="0.0" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="uEf-kd-ZOv" secondAttribute="height" multiplier="1:1" id="mGA-QV-Sde"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="grayMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="Ncy-DN-Eai"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3s-86-phM">
                                                                 <rect key="frame" x="100" y="0.0" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="N3s-86-phM" secondAttribute="height" multiplier="1:1" id="dL2-4m-sZm"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="grayMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="2dR-m1-x39"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJq-TU-p9N">
                                                                 <rect key="frame" x="150" y="0.0" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="IJq-TU-p9N" secondAttribute="height" multiplier="1:1" id="lN9-Qp-Nv4"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="grayMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="XKs-xw-rl5"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -197,40 +207,44 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="iyF-gf-rqk" secondAttribute="height" multiplier="1:1" id="wTy-wc-Ka1"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="grayMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="8RO-2Z-f21"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lS-ql-wvv">
                                                                 <rect key="frame" x="50" y="0.0" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="1lS-ql-wvv" secondAttribute="height" multiplier="1:1" id="Lgj-Zi-Xdo"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="grayMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="WLu-zo-KMn"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3VT-3G-TVP">
                                                                 <rect key="frame" x="100" y="0.0" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="3VT-3G-TVP" secondAttribute="height" multiplier="1:1" id="9Pt-ki-oef"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="grayMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="2nv-Mk-o3H"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqo-Se-5HU">
                                                                 <rect key="frame" x="150" y="0.0" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="bqo-Se-5HU" secondAttribute="height" multiplier="1:1" id="X9f-VO-KCl"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="grayMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="q8V-sC-BZJ"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -242,40 +256,44 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="Xag-0d-xqo" secondAttribute="height" multiplier="1:1" id="uyl-hX-2fV"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="grayMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="Sm5-gT-bXF"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbT-UL-Le8">
                                                                 <rect key="frame" x="50" y="0.0" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="zbT-UL-Le8" secondAttribute="height" multiplier="1:1" id="jn4-uA-A45"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="grayMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="533-Xa-OuN"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCY-HY-bh9">
                                                                 <rect key="frame" x="100" y="0.0" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="GCY-HY-bh9" secondAttribute="height" multiplier="1:1" id="o10-5r-BC7"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="grayMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="bvi-vc-nQk"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JxO-HA-rgo">
                                                                 <rect key="frame" x="150" y="0.0" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="JxO-HA-rgo" secondAttribute="height" multiplier="1:1" id="KtQ-Fw-8T9"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="grayMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="DIs-p1-rQV"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -287,40 +305,44 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="Wfd-Jy-qm0" secondAttribute="height" multiplier="1:1" id="vEf-7f-HKD"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="grayMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="xSn-vZ-JPa"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iX2-I8-cn2">
                                                                 <rect key="frame" x="50" y="0.0" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="iX2-I8-cn2" secondAttribute="height" multiplier="1:1" id="cYf-ae-BnE"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="grayMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="K7q-Gl-RL0"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvY-kv-fha">
                                                                 <rect key="frame" x="100" y="0.0" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="wvY-kv-fha" secondAttribute="height" multiplier="1:1" id="XO4-pz-B6P"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="grayMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="ke0-b3-Cw0"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WT-RE-G8a">
                                                                 <rect key="frame" x="150" y="0.0" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="8WT-RE-G8a" secondAttribute="height" multiplier="1:1" id="JX2-Ha-HBh"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="grayMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="Bol-Sb-uze"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -332,40 +354,44 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="6m8-72-fOp" secondAttribute="height" multiplier="1:1" id="gio-M9-4c2"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="grayMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="1Iz-fs-n4p"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWg-0x-Ucc">
                                                                 <rect key="frame" x="50" y="0.0" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="dWg-0x-Ucc" secondAttribute="height" multiplier="1:1" id="bhp-3Z-L4n"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="grayMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="WDd-b3-M2c"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9I-SF-gIw">
                                                                 <rect key="frame" x="100" y="0.0" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="x9I-SF-gIw" secondAttribute="height" multiplier="1:1" id="bq0-aH-553"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="grayMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="86Y-1e-5t5"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CT-uw-Tyh">
                                                                 <rect key="frame" x="150" y="0.0" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="2CT-uw-Tyh" secondAttribute="height" multiplier="1:1" id="fcZ-jH-fTV"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="grayMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="e5Y-Rz-keX"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -377,40 +403,44 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="lzn-CD-jN9" secondAttribute="height" multiplier="1:1" id="F6Z-60-qWc"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="grayMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="YsS-5N-Fsg"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sst-mt-DPd">
                                                                 <rect key="frame" x="50" y="0.0" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="sst-mt-DPd" secondAttribute="height" multiplier="1:1" id="bLv-yn-Oju"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="grayMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="2ov-7R-Vip"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fj4-E7-Ixs">
                                                                 <rect key="frame" x="100" y="0.0" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="Fj4-E7-Ixs" secondAttribute="height" multiplier="1:1" id="lBj-q1-fjD"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="grayMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="Rkc-fk-gaj"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRd-gg-71A">
                                                                 <rect key="frame" x="150" y="0.0" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="WRd-gg-71A" secondAttribute="height" multiplier="1:1" id="c6i-9B-Dmz"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="grayMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="oUB-Rh-1ed"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -422,40 +452,44 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="Lf5-ac-haF" secondAttribute="height" multiplier="1:1" id="cBT-pK-gGr"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="grayMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="EZW-8O-Fiy"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohJ-18-ejw">
                                                                 <rect key="frame" x="50" y="0.0" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="ohJ-18-ejw" secondAttribute="height" multiplier="1:1" id="vNG-2o-9b4"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="grayMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="xYK-TO-3ev"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dg0-a0-Nmq">
                                                                 <rect key="frame" x="100" y="0.0" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="Dg0-a0-Nmq" secondAttribute="height" multiplier="1:1" id="9ze-Bi-JGh"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="grayMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="0zS-Ra-56r"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWR-4e-o9m">
                                                                 <rect key="frame" x="150" y="0.0" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="RWR-4e-o9m" secondAttribute="height" multiplier="1:1" id="3ga-VV-oZa"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="grayMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="cuQ-PE-BMe"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -467,40 +501,45 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="eFZ-Ef-KAF" secondAttribute="height" multiplier="1:1" id="VWC-R3-fch"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="greenMarble"/>
-                                                                </buttonConfiguration>
+                                                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="4Hc-i6-euv"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJq-3A-KYT">
                                                                 <rect key="frame" x="50" y="0.0" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="rJq-3A-KYT" secondAttribute="height" multiplier="1:1" id="Vko-pp-Tzt"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="orangeMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="i6B-nv-bWm"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkA-5j-gzQ">
                                                                 <rect key="frame" x="100" y="0.0" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="UkA-5j-gzQ" secondAttribute="height" multiplier="1:1" id="uNU-Cd-Dq9"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="aquaMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="qHx-TA-Hwk"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cdq-ue-upN">
                                                                 <rect key="frame" x="150" y="0.0" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="Cdq-ue-upN" secondAttribute="height" multiplier="1:1" id="qGT-0q-C4Q"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain">
-                                                                    <backgroundConfiguration key="background" image="yellowMarble"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" backgroundImage="grayMarble"/>
+                                                                <connections>
+                                                                    <action selector="setColor:" destination="RWf-al-GQd" eventType="touchUpInside" id="KIR-VX-Zl2"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -927,7 +966,7 @@
                                                                         </constraints>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="blackIndicator"/>
+                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
                                                                         </buttonConfiguration>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJY-nT-XB1">
@@ -937,7 +976,7 @@
                                                                         </constraints>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="whiteIndicator"/>
+                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
                                                                         </buttonConfiguration>
                                                                     </button>
                                                                 </subviews>
@@ -952,7 +991,7 @@
                                                                         </constraints>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="whiteIndicator"/>
+                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
                                                                         </buttonConfiguration>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KI6-PK-MbF">
@@ -962,7 +1001,7 @@
                                                                         </constraints>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain">
-                                                                            <backgroundConfiguration key="background" image="whiteIndicator"/>
+                                                                            <backgroundConfiguration key="background" image="grayIndicator"/>
                                                                         </buttonConfiguration>
                                                                     </button>
                                                                 </subviews>
@@ -999,6 +1038,9 @@
                                                 <buttonConfiguration key="configuration" style="plain">
                                                     <backgroundConfiguration key="background" image="greenMarble"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="selectGreenActive:" destination="RWf-al-GQd" eventType="touchUpInside" id="s8A-Gd-aT9"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdR-XC-xTQ">
                                                 <rect key="frame" x="71" y="12" width="30.5" height="31"/>
@@ -1009,6 +1051,9 @@
                                                 <buttonConfiguration key="configuration" style="plain">
                                                     <backgroundConfiguration key="background" image="aquaMarble"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="selectAquaActive:" destination="RWf-al-GQd" eventType="touchUpInside" id="vCI-jz-DD8"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Vd-1w-Ibj">
                                                 <rect key="frame" x="121.5" y="12" width="31" height="31"/>
@@ -1019,6 +1064,9 @@
                                                 <buttonConfiguration key="configuration" style="plain">
                                                     <backgroundConfiguration key="background" image="orangeMarble"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="selectOrangeActive:" destination="RWf-al-GQd" eventType="touchUpInside" id="sJK-8g-59S"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhD-p8-wT1">
                                                 <rect key="frame" x="172.5" y="12" width="31" height="31"/>
@@ -1029,6 +1077,9 @@
                                                 <buttonConfiguration key="configuration" style="plain">
                                                     <backgroundConfiguration key="background" image="redMarble"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="selectRedActive:" destination="RWf-al-GQd" eventType="touchUpInside" id="bhS-1j-zTw"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ofv-qo-Djo">
                                                 <rect key="frame" x="223.5" y="12" width="30.5" height="31"/>
@@ -1039,8 +1090,11 @@
                                                 <buttonConfiguration key="configuration" style="plain">
                                                     <backgroundConfiguration key="background" image="purpleMarble"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="selectPurpleActive:" destination="RWf-al-GQd" eventType="touchUpInside" id="teX-KY-5zM"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kig-AQ-rCt">
+                                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kig-AQ-rCt">
                                                 <rect key="frame" x="274" y="12" width="31" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Kig-AQ-rCt" secondAttribute="height" multiplier="1:1" id="tdM-QJ-OGL"/>
@@ -1049,6 +1103,9 @@
                                                 <buttonConfiguration key="configuration" style="plain">
                                                     <backgroundConfiguration key="background" image="yellowMarble"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="selectYellowActive:" destination="RWf-al-GQd" eventType="touchUpInside" id="GEO-nN-FVS"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" name="SecBckgColor"/>
@@ -1085,9 +1142,49 @@
                     </view>
                     <navigationItem key="navigationItem" id="yDg-GD-RUH"/>
                     <connections>
+                        <outlet property="BtnPausa" destination="O86-at-YnK" id="SRw-a2-17K"/>
+                        <outlet property="LbTiempo" destination="ymq-s1-ww9" id="HMK-ZG-7xX"/>
+                        <outlet property="aquaMarble" destination="rdR-XC-xTQ" id="22v-ic-dHU"/>
+                        <outlet property="br1c1" destination="eFZ-Ef-KAF" id="PDx-AH-bOi"/>
+                        <outlet property="br1c2" destination="rJq-3A-KYT" id="fCj-ft-VpX"/>
+                        <outlet property="br1c3" destination="UkA-5j-gzQ" id="NUH-SF-6jh"/>
+                        <outlet property="br1c4" destination="Cdq-ue-upN" id="pxR-iL-Ra2"/>
+                        <outlet property="br2c1" destination="Lf5-ac-haF" id="g2N-ca-j8U"/>
+                        <outlet property="br2c2" destination="ohJ-18-ejw" id="nVw-zw-Hs6"/>
+                        <outlet property="br2c3" destination="Dg0-a0-Nmq" id="J68-oB-SFN"/>
+                        <outlet property="br2c4" destination="RWR-4e-o9m" id="FPa-8C-FTK"/>
+                        <outlet property="br3c1" destination="lzn-CD-jN9" id="xob-fK-iM3"/>
+                        <outlet property="br3c2" destination="sst-mt-DPd" id="occ-9u-XYE"/>
+                        <outlet property="br3c3" destination="Fj4-E7-Ixs" id="sqj-RJ-1y5"/>
+                        <outlet property="br3c4" destination="WRd-gg-71A" id="ga4-Ni-cEt"/>
+                        <outlet property="br4c1" destination="6m8-72-fOp" id="2ml-Qe-sTO"/>
+                        <outlet property="br4c2" destination="dWg-0x-Ucc" id="8dO-j6-4jU"/>
+                        <outlet property="br4c3" destination="x9I-SF-gIw" id="Bu0-4b-FRH"/>
+                        <outlet property="br4c4" destination="2CT-uw-Tyh" id="pjI-SO-GNC"/>
+                        <outlet property="br5c1" destination="Wfd-Jy-qm0" id="QwZ-w8-qWq"/>
+                        <outlet property="br5c2" destination="iX2-I8-cn2" id="sec-PD-kMT"/>
+                        <outlet property="br5c3" destination="wvY-kv-fha" id="f8b-vh-f3m"/>
+                        <outlet property="br5c4" destination="8WT-RE-G8a" id="JIu-IP-T07"/>
+                        <outlet property="br6c1" destination="Xag-0d-xqo" id="Kp3-xa-AKl"/>
+                        <outlet property="br6c2" destination="zbT-UL-Le8" id="AHq-M7-yw5"/>
+                        <outlet property="br6c3" destination="GCY-HY-bh9" id="FJZ-oc-IDk"/>
+                        <outlet property="br6c4" destination="JxO-HA-rgo" id="q3c-P2-vwB"/>
+                        <outlet property="br7c1" destination="iyF-gf-rqk" id="uer-aV-5rM"/>
+                        <outlet property="br7c2" destination="1lS-ql-wvv" id="YLx-JM-lDe"/>
+                        <outlet property="br7c3" destination="3VT-3G-TVP" id="RTz-o9-7kg"/>
+                        <outlet property="br7c4" destination="bqo-Se-5HU" id="TMj-JU-jOn"/>
+                        <outlet property="br8c1" destination="pLB-US-2zp" id="otm-5V-kvG"/>
+                        <outlet property="br8c2" destination="uEf-kd-ZOv" id="d4T-rQ-ANK"/>
+                        <outlet property="br8c3" destination="N3s-86-phM" id="SrT-q1-YdO"/>
+                        <outlet property="br8c4" destination="IJq-TU-p9N" id="kc0-vF-sas"/>
                         <outlet property="colores" destination="JxJ-KD-iX1" id="dp6-ig-Sic"/>
+                        <outlet property="greenMarble" destination="bx1-En-wkB" id="Nys-Ry-8nO"/>
                         <outlet property="jugadas" destination="stb-JK-GZz" id="Ahk-g6-J0A"/>
+                        <outlet property="orangeMarble" destination="2Vd-1w-Ibj" id="Dpa-mP-hnh"/>
                         <outlet property="pistas" destination="K8E-XU-SvU" id="svy-A9-ETD"/>
+                        <outlet property="purpleMarble" destination="Ofv-qo-Djo" id="UeO-4z-kR9"/>
+                        <outlet property="redMarble" destination="QhD-p8-wT1" id="UAX-Jv-Es2"/>
+                        <outlet property="yellowMarble" destination="Kig-AQ-rCt" id="f2q-cZ-gPw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="foT-J9-aNY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1129,7 +1226,6 @@
     </scenes>
     <resources>
         <image name="aquaMarble" width="98" height="98"/>
-        <image name="blackIndicator" width="65" height="65"/>
         <image name="grayIndicator" width="65" height="65"/>
         <image name="grayMarble" width="98" height="98"/>
         <image name="greenMarble" width="98" height="98"/>
@@ -1138,7 +1234,6 @@
         <image name="play.rectangle.fill" catalog="system" width="128" height="93"/>
         <image name="purpleMarble" width="98" height="98"/>
         <image name="redMarble" width="98" height="98"/>
-        <image name="whiteIndicator" width="65" height="65"/>
         <image name="yellowMarble" width="98" height="98"/>
         <namedColor name="AccentColor">
             <color red="0.0039215686274509803" green="0.67843137254901964" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
