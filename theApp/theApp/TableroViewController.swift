@@ -175,16 +175,15 @@ class TableroViewController: UIViewController {
     
     @IBAction func setColor(_ sender: UIButton) {
         if sender.isEnabled {
-            if let img = getActiveImage() {
-                sender.setBackgroundImage(img, for: .normal)
+            if let col = tablero[activeRow! - 1].firstIndex(of: sender),
+               let color = activeColor,
+               let img = getActiveImage() {
+                if !guessingRow.contains(color){
+                    guessingRow[col] = color
+                    sender.setBackgroundImage(img, for: .normal)
+                }
             }
         }
-        
-        if let col = tablero[activeRow! - 1].firstIndex(of: sender),
-           let color = activeColor {
-            guessingRow[col] = color
-        }
-        
     }
     
     // MARK: - Checking guess
