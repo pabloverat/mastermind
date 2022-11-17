@@ -190,16 +190,20 @@ class TableroViewController: UIViewController {
     
     @IBAction func checkBttn(_ sender: UIButton) {
         
-        let eval = evaluateGuess(guess: guessingRow, code: code!)
-        
-        print(code as Any)
-        print(guessingRow)
-        print(eval)
-        
-        updatePistas(eval: eval)
-        
-        activeRow! += 1
-        updateActiveRow()
+        if !guessingRow.contains(0){
+            
+            let eval = evaluateGuess(guess: guessingRow, code: code!)
+            
+            print(code as Any)
+            print(guessingRow)
+            print(eval)
+            guessingRow = [0,0,0,0]
+            
+            updatePistas(eval: eval)
+            
+            activeRow! += 1
+            updateActiveRow()
+        }
         
     }
 
