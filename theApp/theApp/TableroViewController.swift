@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TableroViewController: UIViewController {
+class 	TableroViewController: UIViewController {
 
     // MARK: - Outlets
     
@@ -150,6 +150,9 @@ class TableroViewController: UIViewController {
     
     var activeColor : Int?
     
+    var listaJugadores = [Player]()
+
+    
     // MARK: - Generate secret code
     
     func generateCode() -> [Int] {
@@ -191,7 +194,6 @@ class TableroViewController: UIViewController {
     @IBAction func checkBttn(_ sender: UIButton) {
         
         if !guessingRow.contains(0){
-            
             let eval = evaluateGuess(guess: guessingRow, code: code!)
             
             print(code as Any)
@@ -203,10 +205,20 @@ class TableroViewController: UIViewController {
             
             activeRow! += 1
             updateActiveRow()
+            
+            if activeRow! < 9{// no ha excedido el num de intentos
+                if eval[0]==1 && eval[1]==1 && eval[2]==1 && eval [3]==1{//todas las canicas entan correctas
+                   alertWin()
+                    
+                }
+                
+            }
+            else if activeRow! == 9	{// se excedio el numero de intentos
+                alertLose()
+            }
+            
         }
-        
     }
-
     
     func updateActiveRow() {
         
@@ -215,11 +227,122 @@ class TableroViewController: UIViewController {
                 marbleBttn.isEnabled = false
             }
         }
-        
-        for marbleBttn in tablero[activeRow! - 1] {
-            marbleBttn.isEnabled = true
+        if activeRow! < 9
+        {
+            for marbleBttn in tablero[activeRow! - 1] {
+                marbleBttn.isEnabled = true
+            }
+        }
+        else   {// se excedio el numero de intentos
+            alertLose()
         }
     }
+   // func segueGanador(){}
+    //MARK: - FUNC WIN & LOSE
+    // variable que guarda las iniciales del jugador ganador
+    //let userText : String
+    var iniciales : String?
+    
+    
+    func regresarInicio(){
+        navigationController?.popToRootViewController(animated: true)
+    }
+    
+    func alertLose(){
+        timer.invalidate()
+        let alertaLose = UIAlertController (title: "YOU LOSE", message: "", preferredStyle: .alert)
+        let accionRegresar = UIAlertAction (title: "Salir", style: .cancel){
+            act in
+            self.regresarInicio()
+        }
+ 
+        alertaLose.addAction(accionRegresar)
+        present(alertaLose, animated: true)
+       
+        
+    }
+   
+    
+    
+    func alertWin(){
+        
+        timer.invalidate()
+        
+        
+        let alertaWin = UIAlertController (title: "YOU WIN!", message: "Tu tiempo fue de: "+String(format: "%.1f", counter)+" s"+"\n Ingresa tus iniciales", preferredStyle: .alert)
+        
+        
+        let accionRegistrar = UIAlertAction(title: "Registrar", style: .default, handler: { [weak alertaWin] (_)
+            in  guard let textField = alertaWin?.textFields?[0],   let usertext = textField.text
+            else { return }
+            self.iniciales = usertext
+            self.regresarInicio()
+            print(self.iniciales as Any)
+            
+            self.uploadIniciales(iniciales: self.iniciales!, counter: self.counter)
+        })
+        
+        alertaWin.addTextField { (textField) in
+            textField.placeholder = "Default placeholder text"
+        }
+        
+        alertaWin.addAction(accionRegistrar)
+        present(alertaWin, animated: true)
+        
+    
+    }
+    
+    
+    // MARK: - Guardar y obtener
+    
+    func dataFileURL() -> URL{
+        let documentsDirectory = FileManager.default
+            .urls(for: .documentDirectory, in:.userDomainMask).first!
+        let pathArchivo = documentsDirectory.appendingPathComponent("scores").appendingPathExtension("plist")
+        print(pathArchivo.path)
+        return pathArchivo
+    }
+    
+    func uploadIniciales(iniciales : String, counter : Double){
+        
+        //let app = UIApplication.shared
+        //NotificationCenter.default.addObserver(self, selector: #selector(guardarScores), name: UIApplication.didEnterBackgroundNotification, object: app)
+        if FileManager.default.fileExists(atPath: dataFileURL().path())
+        {
+             obtenerScores()
+        }
+        
+        listaJugadores.append(Player(nombre: iniciales, tiempo: counter))
+
+        guardarScores()
+        
+    }
+    
+    func obtenerScores(){
+        listaJugadores.removeAll()
+
+        do {
+            let data = try Data.init(contentsOf: dataFileURL())
+            listaJugadores = try PropertyListDecoder().decode([Player].self, from: data)
+        }
+        catch{
+            print("Error al cargar los datos del archivo")
+        }
+    }
+    
+    @objc func guardarScores(){
+        do {
+            let data = try PropertyListEncoder().encode(listaJugadores)
+            try data.write(to: dataFileURL())
+            print("ya guardé datos")
+        }
+        catch {
+            print("error al guardar los datos")
+        }
+    }
+    
+
+
     
     // MARK: - Printing clues
 
@@ -352,6 +475,13 @@ class TableroViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    // MARK: - Modificacion hecha para lo de files
+        /*let app = UIApplication.shared
+        NotificationCenter.default.addObserver(self, selector: #selector(guardarScores), name: UIApplication.didEnterBackgroundNotification, object: app)
+        if FileManager.default.fileExists(atPath: dataFileURL().path())
+        {
+            obtenerScores()
+        }*/
         jugadas.layer.cornerRadius = 10
         pistas.layer.cornerRadius = 10
         colores.layer.cornerRadius = 10
@@ -388,6 +518,12 @@ class TableroViewController: UIViewController {
         
         
     }
+
+    
+}
     
 
-}
+
+    
+
+

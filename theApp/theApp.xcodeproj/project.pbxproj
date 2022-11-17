@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2D64A8A528FB5ED50092063E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64A8A428FB5ED50092063E /* HomeViewController.swift */; };
 		2D64A8A728FB5F270092063E /* TableroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D64A8A628FB5F260092063E /* TableroViewController.swift */; };
+		2DB3B419292612470058D155 /* ScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB3B417292612470058D155 /* ScoresViewController.swift */; };
+		2DB3B41A292612470058D155 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB3B418292612470058D155 /* Player.swift */; };
 		2DD9BC2328F3A0F600538598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9BC2228F3A0F600538598 /* AppDelegate.swift */; };
 		2DD9BC2528F3A0F600538598 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9BC2428F3A0F600538598 /* SceneDelegate.swift */; };
 		2DD9BC2728F3A0F600538598 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9BC2628F3A0F600538598 /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 /* Begin PBXFileReference section */
 		2D64A8A428FB5ED50092063E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2D64A8A628FB5F260092063E /* TableroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableroViewController.swift; sourceTree = "<group>"; };
+		2DB3B417292612470058D155 /* ScoresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScoresViewController.swift; path = theApp/ScoresViewController.swift; sourceTree = "<group>"; };
+		2DB3B418292612470058D155 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = theApp/Player.swift; sourceTree = "<group>"; };
 		2DD9BC1F28F3A0F600538598 /* theApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = theApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DD9BC2228F3A0F600538598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DD9BC2428F3A0F600538598 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +50,8 @@
 		2DD9BC1628F3A0F600538598 = {
 			isa = PBXGroup;
 			children = (
+				2DB3B418292612470058D155 /* Player.swift */,
+				2DB3B417292612470058D155 /* ScoresViewController.swift */,
 				2DD9BC2128F3A0F600538598 /* theApp */,
 				2DD9BC2028F3A0F600538598 /* Products */,
 			);
@@ -149,7 +155,9 @@
 			files = (
 				2DD9BC2728F3A0F600538598 /* ViewController.swift in Sources */,
 				2D64A8A728FB5F270092063E /* TableroViewController.swift in Sources */,
+				2DB3B419292612470058D155 /* ScoresViewController.swift in Sources */,
 				2DD9BC2328F3A0F600538598 /* AppDelegate.swift in Sources */,
+				2DB3B41A292612470058D155 /* Player.swift in Sources */,
 				CF8438242912F695004926C2 /* ViewControllerPausa.swift in Sources */,
 				2DD9BC2528F3A0F600538598 /* SceneDelegate.swift in Sources */,
 				2D64A8A528FB5ED50092063E /* HomeViewController.swift in Sources */,
