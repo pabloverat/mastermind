@@ -203,24 +203,27 @@ class 	TableroViewController: UIViewController {
             
             updatePistas(eval: eval)
             
-            activeRow! += 1
-            updateActiveRow()
             
-            if activeRow! < 9{// no ha excedido el num de intentos
+            
+            if activeRow! < 8{// no ha excedido el num de intentos
                 if eval[0]==1 && eval[1]==1 && eval[2]==1 && eval [3]==1{//todas las canicas entan correctas
                    alertWin()
-                    
                 }
                 
             }
-            else if activeRow! == 9	{// se excedio el numero de intentos
-                alertLose()
+            else if activeRow! == 8	{// se excedio el numero de intentos
+                if eval[0]==1 && eval[1]==1 && eval[2]==1 && eval [3]==1{//todas las canicas entan correctas
+                    alertWin()
+                }else {alertLose()}
             }
             
+            activeRow! += 1
+            updateActiveRow()
         }
     }
     
     func updateActiveRow() {
+        let eval = evaluateGuess(guess: guessingRow, code: code!)
         
         for row in tablero {
             for marbleBttn in row {
@@ -233,15 +236,13 @@ class 	TableroViewController: UIViewController {
                 marbleBttn.isEnabled = true
             }
         }
-        else   {// se excedio el numero de intentos
-            alertLose()
-        }
+          
     }
    // func segueGanador(){}
     //MARK: - FUNC WIN & LOSE
     // variable que guarda las iniciales del jugador ganador
     //let userText : String
-    var iniciales : String?
+    var iniciales : String = "anonimo"
     
     
     func regresarInicio(){
@@ -275,16 +276,20 @@ class 	TableroViewController: UIViewController {
         let accionRegistrar = UIAlertAction(title: "Registrar", style: .default, handler: { [weak alertaWin] (_)
             in  guard let textField = alertaWin?.textFields?[0],   let usertext = textField.text
             else { return }
-            self.iniciales = usertext
+            if usertext != ""{
+                self.iniciales = usertext }
+            
             self.regresarInicio()
             print(self.iniciales as Any)
             
-            self.uploadIniciales(iniciales: self.iniciales!, counter: self.counter)
+            self.uploadIniciales(iniciales: self.iniciales, counter: self.counter)
         })
         
         alertaWin.addTextField { (textField) in
-            textField.placeholder = "Default placeholder text"
+            textField.placeholder = "Iniciales"
+            
         }
+       
         
         alertaWin.addAction(accionRegistrar)
         present(alertaWin, animated: true)
@@ -519,7 +524,9 @@ class 	TableroViewController: UIViewController {
         
     }
 
-    
+    override open var shouldAutorotate: Bool {
+           return false
+       }
 }
     
 

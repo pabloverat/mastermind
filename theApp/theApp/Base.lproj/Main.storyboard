@@ -1180,8 +1180,8 @@
                                 </constraints>
                                 <string key="text">El codificador ha creado un código secreto. Puedes seleccionar cualquier combinación de 4 círculos de colores para adivinar el código secreto.
 
-El codificador utilizará canicas blancas para indicar que cada hoyo es de un color correcto pero está en una posición incorrecta, o canica negras para indicar que cada hoyo está en una posición correcta y es de un color correcto. 
-Tienes 7 intentos para adivinar el código secreto.</string>
+El codificador utilizará canicas blancas para indicar que cada espacio es de un color correcto pero está en una posición incorrecta, o canica negras para indicar que cada posicion está en una posición correcta y es de un color correcto. 
+Tienes 8 intentos para adivinar el código secreto.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1226,21 +1226,21 @@ Tienes 7 intentos para adivinar el código secreto.</string>
                                 <color key="sectionIndexColor" name="AccentColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="scoreCells" textLabel="o4L-S3-ZdI" detailTextLabel="tQJ-4t-aHF" style="IBUITableViewCellStyleValue1" id="TQa-hu-aOb">
-                                        <rect key="frame" x="0.0" y="50" width="301" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="50" width="301" height="49.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TQa-hu-aOb" id="tSH-AM-CDQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="301" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="301" height="49.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o4L-S3-ZdI">
-                                                    <rect key="frame" x="16" y="10" width="29.5" height="25"/>
+                                                    <rect key="frame" x="16" y="13" width="29.5" height="25"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="MuktaMahee-Bold" family="Mukta Mahee" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tQJ-4t-aHF">
-                                                    <rect key="frame" x="235.5" y="10" width="49.5" height="25"/>
+                                                    <rect key="frame" x="235.5" y="13" width="49.5" height="25"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -27,7 +27,7 @@ class ScoresViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return min(listaJugadores.count,5)
+        return (listaJugadores.count)
         }
         
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
